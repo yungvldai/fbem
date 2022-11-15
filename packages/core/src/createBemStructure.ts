@@ -1,10 +1,10 @@
 import { applyCase } from './applyCase';
 import { NO_MOD_VAL } from './constants';
 import { parseBem } from './parseBem';
-import { BemParams, NamingOptions } from './types';
+import { BemStructure, NamingOptions } from './types';
 
 export const createBemStructure = (classesMap: Record<string, string>, naming: NamingOptions) => {
-  const bemStructure: Record<string, BemParams> = {};
+  const bemStructure: BemStructure = {};
 
   for (const [name, value] of Object.entries(classesMap)) {
     const { block, elem, modName, modVal } = parseBem(name, naming);
