@@ -1,6 +1,5 @@
 {
   "name": "fbem",
-  "version": "1.0.0",
   "description": "Functional BEM packages",
   "scripts": {
     "test": "jest",
