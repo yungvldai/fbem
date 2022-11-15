@@ -1,8 +1,8 @@
 import { createBemStructure } from '@fbem/core';
 
-import { Options } from '../options';
+import { Options } from '../types/options';
 import { CSSExportsWithSourceMap } from './getCssExports';
-import { Logger } from './logger';
+import { Logger } from '../types/logger';
 
 export const createDtsExports = ({
   cssExports,

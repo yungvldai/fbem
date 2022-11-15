@@ -5,7 +5,7 @@ import filter from 'postcss-filter-plugins';
 import postcssrc from 'postcss-load-config';
 import tsModule from 'typescript/lib/tsserverlibrary';
 
-import { Options } from './options';
+import { Options } from './types/options';
 import { getDtsSnapshot } from './utils/getDtsSnapshot';
 import { getProcessor } from './utils/getProcessor';
 import { createLogger } from './utils/logger';
@@ -25,7 +25,6 @@ function init({ typescript: ts }: { typescript: typeof tsModule }) {
   const create = (info: ts.server.PluginCreateInfo) => {
     const logger = createLogger(info);
     const directory = info.project.getCurrentDirectory();
-    const compilerOptions = info.project.getCompilerOptions();
 
     // TypeScript plugins have a `cwd` of `/`, which causes issues with import resolution.
     process.chdir(directory);
@@ -63,8 +62,7 @@ function init({ typescript: ts }: { typescript: typeof tsModule }) {
           fileName,
           scriptSnapshot,
           options,
-          logger,
-          compilerOptions
+          logger
         );
       }
       const sourceFile = _createLanguageServiceSourceFile(fileName, scriptSnapshot, ...rest);
@@ -84,8 +82,7 @@ function init({ typescript: ts }: { typescript: typeof tsModule }) {
           sourceFile.fileName,
           scriptSnapshot,
           options,
-          logger,
-          compilerOptions
+          logger
         );
       }
       sourceFile = _updateLanguageServiceSourceFile(sourceFile, scriptSnapshot, ...rest);

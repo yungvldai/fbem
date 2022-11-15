@@ -1,10 +1,8 @@
 import { CSSExports, extractICSS } from 'icss-utils';
 import Processor from 'postcss/lib/processor';
 import { RawSourceMap } from 'source-map-js';
-import tsModule from 'typescript/lib/tsserverlibrary';
 
-import { Options } from '../options';
-import { Logger } from './logger';
+import { Logger } from '../types/logger';
 
 export interface CSSExportsWithSourceMap {
   classes: CSSExports;
@@ -16,16 +14,12 @@ export const getCssExports = ({
   css,
   fileName,
   logger,
-  options,
   processor,
-  compilerOptions,
 }: {
   css: string;
   fileName: string;
   logger: Logger;
-  options: Options;
   processor: Processor;
-  compilerOptions: tsModule.CompilerOptions;
 }): CSSExportsWithSourceMap => {
   try {
     let sourceMap: string | undefined;

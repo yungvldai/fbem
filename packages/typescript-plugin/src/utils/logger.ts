@@ -1,9 +1,5 @@
 import { PLUGIN_NAME } from '../constants';
-
-export interface Logger {
-  log: (message: string) => void;
-  error: (error: Error) => void;
-}
+import { Logger } from '../types/logger';
 
 export const createLogger = (info: ts.server.PluginCreateInfo): Logger => {
   const log = (message: string) => {
