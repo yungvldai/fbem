@@ -50,5 +50,6 @@
     "type": "git",
     "url": "git+https://github.com/yungvldai/fbem.git"
   },
-  "homepage": "https://github.com/yungvldai/fbem/tree/master/packages/css-loader"
+  "homepage": "https://github.com/yungvldai/fbem/tree/master/packages/css-loader",
+  "gitHead": "8e284c80ad3eab34742998f39851535277a0dbd6"
 }

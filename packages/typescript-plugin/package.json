@@ -41,5 +41,6 @@
     "type": "git",
     "url": "git+https://github.com/yungvldai/fbem.git"
   },
-  "homepage": "https://github.com/yungvldai/fbem/tree/master/packages/typescript-plugin"
+  "homepage": "https://github.com/yungvldai/fbem/tree/master/packages/typescript-plugin",
+  "gitHead": "8e284c80ad3eab34742998f39851535277a0dbd6"
 }
