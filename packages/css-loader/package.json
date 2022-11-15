@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "functional bem css loader module for webpack",
   "main": "dist/cjs.js",
+  "author": {
+    "name": "Vladislav Ivanov",
+    "email": "vladivanov.dev@gmail.com",
+    "site": "https://vladivanov.me/"
+  },
+  "license": "MIT",
   "engines": {
     "node": ">= 12.13.0"
   },
@@ -39,5 +45,10 @@
     "@types/postcss-modules-values": "^4.0.0",
     "@types/semver": "^7.3.12",
     "cross-env": "^7.0.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yungvldai/fbem.git"
+  },
+  "homepage": "https://github.com/yungvldai/fbem/tree/master/packages/css-loader"
 }

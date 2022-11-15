@@ -3,6 +3,15 @@
   "version": "1.0.3",
   "description": "functional bem core",
   "main": "dist/index.js",
+  "author": {
+    "name": "Vladislav Ivanov",
+    "email": "vladivanov.dev@gmail.com",
+    "site": "https://vladivanov.me/"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
@@ -11,7 +20,9 @@
     "format": "prettier --write src/",
     "prepublishOnly": "npm run build"
   },
-  "files": [
-    "dist"
-  ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yungvldai/fbem.git"
+  },
+  "homepage": "https://github.com/yungvldai/fbem/tree/master/packages/core"
 }
