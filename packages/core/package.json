@@ -1,0 +1,17 @@
+{
+  "name": "@fbem/core",
+  "version": "1.0.3",
+  "description": "functional bem core",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "pre-commit": "lint-staged",
+    "format": "prettier --write src/",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}

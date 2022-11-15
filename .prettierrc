@@ -1,0 +1,11 @@
+{
+  "importOrder": [
+    "^src/(.*)$",
+    "^\\.\\.?\\/((?!css).)*$",
+    "^(.*)\\.css$"
+  ],
+  "importOrderSeparation": true,
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
