@@ -33,7 +33,7 @@ export const getExportCode = (
               .map((modVal) => `if(${`${modName}==="${modVal}"`})r.push("${mod.values[modVal]}");`)
               .join('');
           })
-          .join('')}return r.join(" ");`;
+          .join('')}return r.filter(x=>x).join(" ");`;
 
         return `export var ${bemFnName}=(${hasMods ? modsArg : ''}m=[])=>{${bemBody}}\n`;
       })

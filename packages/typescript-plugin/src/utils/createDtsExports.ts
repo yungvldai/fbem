@@ -33,7 +33,9 @@ export const createDtsExports = ({
         .join(', ')} } = {}, `;
       const hasMods = modNames.length > 0;
 
-      return `export const ${bemFnName}: (${hasMods ? modsArg : ''}mixes?: string[]) => string;`;
+      return `export const ${bemFnName}: (${
+        hasMods ? modsArg : ''
+      }mixes?: (string | undefined)[]) => string;`;
     })
     .join('\n');
 };

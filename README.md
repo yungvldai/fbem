@@ -1,5 +1,9 @@
 # Functional BEM
 
+## Demo
+![demo](https://github.com/yungvldai/fbem/blob/master/media/demo.gif)
+
+
 ## Example
 
 ```css
