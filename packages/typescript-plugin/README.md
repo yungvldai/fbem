@@ -1,4 +1,4 @@
-# @fbem/typescript-plugin
+# @fbem/typescript-plugin [![npm](https://img.shields.io/npm/v/@fbem/typescript-plugin)](https://www.npmjs.com/package/@fbem/typescript-plugin)
 
 **@fbem/typescript-plugin** is a plugin for TypeScript. Plugin provides type definitions for generated BEM functions.
 

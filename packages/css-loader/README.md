@@ -1,4 +1,4 @@
-# @fbem/css-loader
+# @fbem/css-loader [![npm](https://img.shields.io/npm/v/@fbem/css-loader)](https://www.npmjs.com/package/@fbem/css-loader)
 
 ## Getting started
 

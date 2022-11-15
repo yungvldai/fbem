@@ -1,4 +1,6 @@
-# @fbem/core
+# @fbem/core [![npm](https://img.shields.io/npm/v/@fbem/core)](https://www.npmjs.com/package/@fbem/core)
+
+
 
 **@fbem/core** is a core package for functional BEM.
 It provides utility for parsing BEM entities into BEM structure, 
