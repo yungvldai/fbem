@@ -1,10 +1,10 @@
 import Processor from 'postcss/lib/processor';
 import tsModule from 'typescript/lib/tsserverlibrary';
 
+import { Logger } from '../types/logger';
 import { Options } from '../types/options';
 import { createDtsExports } from './createDtsExports';
 import { getCssExports } from './getCssExports';
-import { Logger } from '../types/logger';
 
 export const getDtsSnapshot = (
   ts: typeof tsModule,
@@ -23,7 +23,6 @@ export const getDtsSnapshot = (
     processor,
   });
 
-  const dts = createDtsExports({ cssExports, fileName, logger, options });
-  
+  const dts = createDtsExports({ cssExports, options });
   return ts.ScriptSnapshot.fromString(dts);
 };

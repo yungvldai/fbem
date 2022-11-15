@@ -1,7 +1,6 @@
 import { applyCase } from './applyCase';
-import { NO_MOD_VAL } from './constants';
 import { parseBem } from './parseBem';
-import { BemStructure, NamingOptions } from './types';
+import { BemStructure, NamingOptions, StringMod } from './types';
 
 export const createBemStructure = (classesMap: Record<string, string>, naming: NamingOptions) => {
   const bemStructure: BemStructure = {};
@@ -28,10 +27,21 @@ export const createBemStructure = (classesMap: Record<string, string>, naming: N
     const normalizedModName = applyCase(modName);
 
     if (!bemStructure[bemFnName].mods[normalizedModName]) {
-      bemStructure[bemFnName].mods[normalizedModName] = {};
+      bemStructure[bemFnName].mods[normalizedModName] = {
+        type: 'boolean',
+        value,
+      };
     }
 
-    bemStructure[bemFnName].mods[normalizedModName][modVal || NO_MOD_VAL] = value;
+    if (modVal) {
+      bemStructure[bemFnName].mods[normalizedModName] = {
+        type: 'string',
+        values: {
+          ...((bemStructure[bemFnName].mods[normalizedModName] as StringMod).values || {}),
+          [modVal]: value,
+        },
+      };
+    }
   }
 
   return bemStructure;

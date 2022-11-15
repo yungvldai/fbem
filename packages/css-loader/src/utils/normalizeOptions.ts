@@ -1,3 +1,4 @@
+import { DEFAULT_NAMING_OPTIONS } from '@fbem/core';
 import { LoaderContext } from 'webpack';
 
 import { LocalIdentOptions, Options, RawLocalIdentOptions, RawOptions } from '../types/options';
@@ -23,17 +24,12 @@ export const normalizeOptions = (
   rawOptions: RawOptions,
   loaderContext: LoaderContext<Options>
 ): Options => {
-  const { naming, localIdent, ...restRawOptions } = rawOptions;
+  const { naming = {}, localIdent, ...restRawOptions } = rawOptions;
 
   return {
     url: true,
     import: true,
-    naming: naming || {
-      elem: '__',
-      modName: '_',
-      modVal: '_',
-      prefix: 'cn',
-    },
+    naming: { ...DEFAULT_NAMING_OPTIONS, ...naming },
     localIdent: getLocalIdentOptions(localIdent, loaderContext),
     exportGlobals: false,
     exportOnlyLocals: false,

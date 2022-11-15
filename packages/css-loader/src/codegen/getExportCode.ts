@@ -1,6 +1,5 @@
 import { createBemStructure } from '@fbem/core';
 
-import { NO_MOD_VAL } from '../constants';
 import { Export, Replacement } from '../types/misc';
 import { Options } from '../types/options';
 
@@ -23,16 +22,17 @@ export const getExportCode = (
         const hasMods = modNames.length > 0;
 
         const bemBody = `var r=["${bemParams.base}"].concat(m);${Object.keys(bemParams.mods)
-          .map((modName) =>
-            Object.keys(bemParams.mods[modName])
-              .map(
-                (modVal) =>
-                  `if(${
-                    modName === NO_MOD_VAL ? modName : `\`\$\{${modName}\}\`==="${modVal}"`
-                  })r.push("${bemParams.mods[modName][modVal]}");`
-              )
-              .join('')
-          )
+          .map((modName) => {
+            const mod = bemParams.mods[modName];
+
+            if (mod.type === 'boolean') {
+              return `if(${modName})r.push(${mod.value});`;
+            }
+
+            return Object.keys(mod.values)
+              .map((modVal) => `if(${`${modName}==="${modVal}"`})r.push("${mod.values[modVal]}");`)
+              .join('');
+          })
           .join('')}return r.join(" ");`;
 
         return `export var ${bemFnName}=(${hasMods ? modsArg : ''}m=[])=>{${bemBody}}\n`;
