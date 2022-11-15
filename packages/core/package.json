@@ -12,6 +12,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
@@ -25,5 +28,5 @@
     "url": "git+https://github.com/yungvldai/fbem.git"
   },
   "homepage": "https://github.com/yungvldai/fbem/tree/master/packages/core",
-  "gitHead": "8e284c80ad3eab34742998f39851535277a0dbd6"
+  "gitHead": "adba7e2e6c077563c93f43b05e8b0e29969f6473"
 }
