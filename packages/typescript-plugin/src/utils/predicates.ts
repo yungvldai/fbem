@@ -1,4 +1,4 @@
-import { DEFAULT_MATCH } from 'src/constants';
+import { DEFAULT_MATCH } from '../constants';
 
 export const isRelative = (fileName: string) => /^\.\.?($|[\\/])/.test(fileName);
 
