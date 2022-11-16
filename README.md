@@ -50,7 +50,7 @@ import { cnBlock, cnBlockElem, cnBlockNameWithDashes } from './style.css';
 
 cnBlock(); // 'block'
 cnBlockElem({ mod: 'val-a' }); // 'block__elem block__elem_mod_val-a'
-cnBlock(['mix']); // 'block mix'
+cnBlock({}, ['mix']); // 'block mix'
 cnBlockElem({ mod: 'val-b' }, ['mix1', 'mix2']); // 'block__elem block__elem_mod_val-b mix1 mix2'
 cnBlockNameWithDashes({ visible: true }); // 'block__name-with-dashes block__name-with-dashes_visible'
 ```
