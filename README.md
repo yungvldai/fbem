@@ -1,7 +1,7 @@
 # Functional BEM
 
 ## Demo
-![demo](https://github.com/yungvldai/fbem/blob/master/media/demo.gif)
+<img src="https://github.com/yungvldai/fbem/blob/master/media/demo.gif" alt="demo" width="100%">
 
 
 ## Example
