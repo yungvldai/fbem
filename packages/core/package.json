@@ -2,6 +2,7 @@
   "name": "@fbem/core",
   "version": "1.0.8",
   "description": "functional bem core",
+  "keywords": ["bem", "fbem", "core"],
   "main": "dist/index.js",
   "author": {
     "name": "Vladislav Ivanov",

@@ -2,6 +2,7 @@
   "name": "@fbem/css-loader",
   "version": "1.0.5",
   "description": "functional bem css loader module for webpack",
+  "keywords": ["bem", "fbem", "css", "loader", "webpack"],
   "main": "dist/cjs.js",
   "author": {
     "name": "Vladislav Ivanov",

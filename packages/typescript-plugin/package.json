@@ -3,6 +3,7 @@
   "version": "1.0.5",
   "main": "dist/index.js",
   "description": "Functional BEM TypeScript plugin",
+  "keywords": ["bem", "fbem", "typescript", "plugin"],
   "author": {
     "name": "Vladislav Ivanov",
     "email": "vladivanov.dev@gmail.com",
