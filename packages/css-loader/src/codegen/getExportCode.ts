@@ -18,8 +18,7 @@ export const getExportCode = (
     let localsCode = Object.entries(bemStructure)
       .map(([bemFnName, bemParams]) => {
         const modNames = Object.keys(bemParams.mods);
-        const modsArg = `{${modNames.join(',')}}={},`;
-        const hasMods = modNames.length > 0;
+        const modsArg = `{${modNames.join(',')}}={}`;
 
         const bemBody = `var r=["${bemParams.base}"].concat(m);${Object.keys(bemParams.mods)
           .map((modName) => {
@@ -35,7 +34,7 @@ export const getExportCode = (
           })
           .join('')}return r.filter(x=>x).join(" ");`;
 
-        return `export var ${bemFnName}=(${hasMods ? modsArg : ''}m=[])=>{${bemBody}}\n`;
+        return `export var ${bemFnName}=(${modsArg},m=[])=>{${bemBody}}\n`;
       })
       .join('');
 

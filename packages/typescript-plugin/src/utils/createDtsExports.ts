@@ -18,6 +18,7 @@ export const createDtsExports = ({
   return Object.entries(bemStructure)
     .map(([bemFnName, bemParams]) => {
       const modNames = Object.keys(bemParams.mods);
+
       const modsArg = `modifiers?: { ${modNames
         .map((modName) => {
           const mod = bemParams.mods[modName];
@@ -28,14 +29,11 @@ export const createDtsExports = ({
 
           return `${modName}?: ${Object.keys(mod.values)
             .map((modVal) => `'${modVal}'`)
-            .join('|')}`;
+            .join(' | ')}`;
         })
-        .join(', ')} } = {}, `;
-      const hasMods = modNames.length > 0;
+        .join(', ')} } = {}`;
 
-      return `export const ${bemFnName}: (${
-        hasMods ? modsArg : ''
-      }mixes?: (string | undefined)[]) => string;`;
+      return `export const ${bemFnName}: (${modsArg}, mixes?: (string | undefined)[]) => string;`;
     })
     .join('\n');
 };
