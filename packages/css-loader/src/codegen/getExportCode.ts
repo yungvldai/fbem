@@ -25,7 +25,7 @@ export const getExportCode = (
             const mod = bemParams.mods[modName];
 
             if (mod.type === 'boolean') {
-              return `if(${modName})r.push(${mod.value});`;
+              return `if(${modName})r.push("${mod.value}");`;
             }
 
             return Object.keys(mod.values)
