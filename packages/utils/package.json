@@ -1,6 +1,6 @@
 {
   "name": "@fbem/utils",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "functional bem utils",
   "main": "dist/index.js",
   "author": {
