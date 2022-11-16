@@ -4,6 +4,16 @@
 <img src="https://github.com/yungvldai/fbem/blob/master/media/demo.gif" alt="demo" width="100%">
 
 
+## Packages
+
+|       Package name      |                                                      Package version                                                      |
+|:-----------------------:|:-------------------------------------------------------------------------------------------------------------------------:|
+|        @fbem/core       |              [ ![npm](https://img.shields.io/npm/v/@fbem/core) ]( https://www.npmjs.com/package/@fbem/core )              |
+|     @fbem/css-loader    |        [ ![npm](https://img.shields.io/npm/v/@fbem/css-loader) ]( https://www.npmjs.com/package/@fbem/css-loader )        |
+| @fbem/typescript-plugin | [ ![npm](https://img.shields.io/npm/v/@fbem/typescript-plugin) ]( https://www.npmjs.com/package/@fbem/typescript-plugin ) |
+|       @fbem/utils       |             [ ![npm](https://img.shields.io/npm/v/@fbem/utils) ]( https://www.npmjs.com/package/@fbem/utils )             |
+
+
 ## Example
 
 ```css

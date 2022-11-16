@@ -1,7 +1,7 @@
 {
-  "name": "@fbem/core",
-  "version": "1.0.7",
-  "description": "functional bem core",
+  "name": "@fbem/utils",
+  "version": "0.0.1",
+  "description": "functional bem utils",
   "main": "dist/index.js",
   "author": {
     "name": "Vladislav Ivanov",
@@ -25,6 +25,5 @@
     "type": "git",
     "url": "git+https://github.com/yungvldai/fbem.git"
   },
-  "homepage": "https://github.com/yungvldai/fbem/tree/master/packages/core",
-  "gitHead": "adba7e2e6c077563c93f43b05e8b0e29969f6473"
+  "homepage": "https://github.com/yungvldai/fbem/tree/master/packages/utils"
 }
