@@ -1,8 +1,14 @@
 {
   "name": "@fbem/css-loader",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "functional bem css loader module for webpack",
-  "keywords": ["bem", "fbem", "css", "loader", "webpack"],
+  "keywords": [
+    "bem",
+    "fbem",
+    "css",
+    "loader",
+    "webpack"
+  ],
   "main": "dist/cjs.js",
   "author": {
     "name": "Vladislav Ivanov",
@@ -29,7 +35,7 @@
     "webpack": "^5.0.0"
   },
   "dependencies": {
-    "@fbem/core": "^1.0.8",
+    "@fbem/core": "^2.0.0",
     "icss-utils": "^5.1.0",
     "postcss": "^8.4.17",
     "postcss-modules-extract-imports": "^3.0.0",

@@ -1,9 +1,14 @@
 {
   "name": "@fbem/typescript-plugin",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "description": "Functional BEM TypeScript plugin",
-  "keywords": ["bem", "fbem", "typescript", "plugin"],
+  "keywords": [
+    "bem",
+    "fbem",
+    "typescript",
+    "plugin"
+  ],
   "author": {
     "name": "Vladislav Ivanov",
     "email": "vladivanov.dev@gmail.com",
@@ -23,7 +28,7 @@
     "prebuild": "npm run clean"
   },
   "dependencies": {
-    "@fbem/core": "^1.0.8",
+    "@fbem/core": "^2.0.0",
     "icss-utils": "^5.1.0",
     "postcss": "^8.3.0",
     "postcss-filter-plugins": "^3.0.1",

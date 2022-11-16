@@ -1,8 +1,12 @@
 {
   "name": "@fbem/utils",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "functional bem utils",
-  "keywords": ["bem", "fbem", "utils"],
+  "keywords": [
+    "bem",
+    "fbem",
+    "utils"
+  ],
   "main": "dist/index.js",
   "author": {
     "name": "Vladislav Ivanov",
