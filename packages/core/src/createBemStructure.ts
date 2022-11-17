@@ -15,7 +15,7 @@ export const createBemStructure = (classesMap: Record<string, string>, naming: N
 
     if (!bemStructure[bemFnName]) {
       bemStructure[bemFnName] = {
-        base: value,
+        base: !modName && !modVal ? value : '',
         mods: {},
       };
     }
