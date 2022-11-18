@@ -15,18 +15,15 @@ npm i -D @fbem/typescript-plugin
     "plugins": [
       { 
         "name": "@fbem/typescript-plugin",
-        "options": {
-          "match": "\\.css",
-          "naming": {
-            "elem": "__",
-            "modName": "_",
-            "modVal": "_",
-            "prefix": "cn"
-          }
-        }
       }
     ]
   }
 }
-
 ```
+
+## options
+
+| Option |                         Package version                         |
+|:------------:|:---------------------------------------------------------------:|
+|     match    |                              \\.css                             |
+|    naming    | { "elem": "__", "modName": "_", "modVal": "_", "prefix": "cn" } |

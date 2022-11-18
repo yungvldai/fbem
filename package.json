@@ -2,12 +2,14 @@
   "name": "fbem",
   "description": "Functional BEM packages",
   "scripts": {
-    "test": "jest",
+    "test": "lerna run test",
     "prepare": "husky install",
     "pre-commit": "lint-staged",
     "format": "prettier --write packages/*/src"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
     "@trivago/prettier-plugin-sort-imports": "^3.4.0",
     "@types/jest": "^29.2.3",
     "husky": "^8.0.2",

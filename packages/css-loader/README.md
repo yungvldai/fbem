@@ -7,7 +7,7 @@
 > **Warning**
 >
 > 1. webpack@5 is required
-> 2. mini-css-extract-plugin is required
+> 2. mini-css-extract-plugin@2.7.0+ is required
 
 ```console
 npm i -D @fbem/css-loader
@@ -29,3 +29,6 @@ module.exports = {
   },
 };
 ```
+
+## Options
+

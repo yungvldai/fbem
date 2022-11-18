@@ -21,6 +21,7 @@
     "access": "public"
   },
   "scripts": {
+    "test": "jest",
     "build": "tsc",
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",

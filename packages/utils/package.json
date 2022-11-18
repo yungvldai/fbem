@@ -21,7 +21,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc --outDir dist && tsc --outDir dist/esm --module esnext",
+    "test": "jest",
+    "build": "tsc --module esnext --outDir dist && tsc --outDir dist/cjs ",
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",
     "prepublishOnly": "npm run build"
