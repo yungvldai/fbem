@@ -1,32 +1,32 @@
 name: Publish
 
 on:
-  # do not run unless conventinal commits are not used
-  # 
-  # push:
-  #   branches: [ master ]
-  # pull_request: 
-  #   types: [ closed ]
-  #   branches:
-  #     - master
+  push:
+    branches: [master]
+  pull_request:
+    types: [closed]
+    branches:
+      - master
 
 jobs:
   publish:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
-    steps: 
-    - name: "Checkout"
-      uses: "actions/checkout@v3"
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v3"
+        with:
+          fetch-depth: 0
 
-    - name: "Setup Node.js"
-      uses: actions/setup-node@v3
+      - name: "Setup Node.js"
+        uses: actions/setup-node@v3
 
-    - name: "Deps"
-      run: |
-        npm ci
-    
-    - name: "Version & publish"
-      run: |
-        npx lerna version --conventional-commits --conventional-graduate --yes
-        npx lerna publish from-git --yes
+      - name: "Deps"
+        run: |
+          npm ci
+
+      - name: "Version & publish"
+        run: |
+          npx lerna version --conventional-commits --conventional-graduate --yes
+          npx lerna publish from-git --yes
