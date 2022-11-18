@@ -8,10 +8,10 @@
 
 |       Package name      |                                                      Package version                                                      |
 |:-----------------------:|:-------------------------------------------------------------------------------------------------------------------------:|
-|        @fbem/core       |              [ ![npm](https://img.shields.io/npm/v/@fbem/core) ]( https://www.npmjs.com/package/@fbem/core )              |
-|     @fbem/css-loader    |        [ ![npm](https://img.shields.io/npm/v/@fbem/css-loader) ]( https://www.npmjs.com/package/@fbem/css-loader )        |
-| @fbem/typescript-plugin | [ ![npm](https://img.shields.io/npm/v/@fbem/typescript-plugin) ]( https://www.npmjs.com/package/@fbem/typescript-plugin ) |
-|       @fbem/utils       |             [ ![npm](https://img.shields.io/npm/v/@fbem/utils) ]( https://www.npmjs.com/package/@fbem/utils )             |
+|        [@fbem/core](https://github.com/yungvldai/fbem/tree/master/packages/core)       |              [ ![npm](https://img.shields.io/npm/v/@fbem/core) ]( https://www.npmjs.com/package/@fbem/core )              |
+|     [@fbem/css-loader](https://github.com/yungvldai/fbem/tree/master/packages/css-loader)    |        [ ![npm](https://img.shields.io/npm/v/@fbem/css-loader) ]( https://www.npmjs.com/package/@fbem/css-loader )        |
+| [@fbem/typescript-plugin](https://github.com/yungvldai/fbem/tree/master/packages/typescript-plugin) | [ ![npm](https://img.shields.io/npm/v/@fbem/typescript-plugin) ]( https://www.npmjs.com/package/@fbem/typescript-plugin ) |
+|       [@fbem/utils](https://github.com/yungvldai/fbem/tree/master/packages/utils)       |             [ ![npm](https://img.shields.io/npm/v/@fbem/utils) ]( https://www.npmjs.com/package/@fbem/utils )             |
 
 
 ## Example
