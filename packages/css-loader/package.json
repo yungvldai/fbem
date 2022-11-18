@@ -1,6 +1,6 @@
 {
   "name": "@fbem/css-loader",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "functional bem css loader module for webpack",
   "keywords": [
     "bem",
@@ -35,7 +35,7 @@
     "webpack": "^5.0.0"
   },
   "dependencies": {
-    "@fbem/core": "^2.0.3",
+    "@fbem/core": "^2.0.4",
     "icss-utils": "^5.1.0",
     "postcss": "^8.4.17",
     "postcss-modules-extract-imports": "^3.0.0",
