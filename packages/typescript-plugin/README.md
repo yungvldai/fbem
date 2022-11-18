@@ -23,7 +23,7 @@ npm i -D @fbem/typescript-plugin
 
 ## options
 
-| Option |                         Package version                         |
+| Option |                         Default value                         |
 |:------------:|:---------------------------------------------------------------:|
-|     match    |                              \\.css                             |
-|    naming    | { "elem": "__", "modName": "_", "modVal": "_", "prefix": "cn" } |
+|     match    |                              "\\\\.css"                             |
+|    naming    | { "elem": "__", "modName": "\_", "modVal": "\_", "prefix": "cn" } |
