@@ -25,8 +25,11 @@ jobs:
       - name: "Deps"
         run: |
           npm ci
+          npx lerna bootstrap
 
       - name: "Version & publish"
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           npx lerna version --conventional-commits --conventional-graduate --yes
           npx lerna publish from-git --yes
