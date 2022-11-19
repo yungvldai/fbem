@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.11](https://github.com/yungvldai/fbem/compare/@fbem/core@2.0.10...@fbem/core@2.0.11) (2022-11-19)
+
+### Bug Fixes
+
+- **utils:** build fix ([e7023ca](https://github.com/yungvldai/fbem/commit/e7023ca6acc50eeee71e8aa907c1a836fb3ca4df))
+
 ## [2.0.10](https://github.com/yungvldai/fbem/compare/@fbem/core@2.0.7...@fbem/core@2.0.10) (2022-11-19)
 
 **Note:** Version bump only for package @fbem/core
