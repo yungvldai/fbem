@@ -1,7 +1,6 @@
-import { createBemStructure, DEFAULT_NAMING_OPTIONS } from '@fbem/core';
-
 import { Options } from '../types/options';
 import { CSSExportsWithSourceMap } from './getCssExports';
+import { createBemStructure, DEFAULT_NAMING_OPTIONS } from '@fbem/core';
 
 export const createDtsExports = ({
   cssExports,
@@ -28,7 +27,15 @@ export const createDtsExports = ({
           }
 
           return `${modName}?: ${Object.keys(mod.values)
-            .map((modVal) => `'${modVal}'`)
+            .map((modVal) => {
+              let type = `'${modVal}'`;
+
+              if (['true', 'false'].includes(modVal) || !Number.isNaN(Number(modVal))) {
+                type += ` | ${modVal}`;
+              }
+
+              return type;
+            })
             .join(' | ')}`;
         })
         .join(', ')} } = {}`;

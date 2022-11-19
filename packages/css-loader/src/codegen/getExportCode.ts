@@ -1,7 +1,6 @@
-import { createBemStructure } from '@fbem/core';
-
 import { Export, Replacement } from '../types/misc';
 import { Options } from '../types/options';
+import { createBemStructure } from '@fbem/core';
 
 export const getExportCode = (
   exports: Export[],
@@ -29,7 +28,10 @@ export const getExportCode = (
             }
 
             return Object.keys(mod.values)
-              .map((modVal) => `if(${`${modName}==="${modVal}"`})r.push("${mod.values[modVal]}");`)
+              .map(
+                (modVal) =>
+                  `if(${`\`\$\{${modName}\}\`==="${modVal}"`})r.push("${mod.values[modVal]}");`
+              )
               .join('');
           })
           .join('')}return r.filter(x=>x).join(" ");`;
