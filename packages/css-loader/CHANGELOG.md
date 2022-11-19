@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.10](https://github.com/yungvldai/fbem/compare/@fbem/css-loader@2.0.7...@fbem/css-loader@2.0.10) (2022-11-19)
+
+**Note:** Version bump only for package @fbem/css-loader
+
 ## [2.0.7](https://github.com/yungvldai/fbem/compare/@fbem/css-loader@2.0.5...@fbem/css-loader@2.0.7) (2022-11-18)
 
 ### Bug Fixes
