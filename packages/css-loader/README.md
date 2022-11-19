@@ -37,7 +37,7 @@ module.exports = {
 #### Type
 
 ```ts
-boolean | { filter: (url: string, resourcePath: string) => boolean; }
+type UrlOption = boolean | { filter: (url: string, resourcePath: string) => boolean; }
 ```
 
 #### Description
@@ -52,7 +52,7 @@ A function can also be passed to control this behavior dynamically based on the 
 #### Type
 
 ```ts
-boolean | { filter: (url: string, media: string, resourcePath: string) => boolean };
+type ImportOption = boolean | { filter: (url: string, media: string, resourcePath: string) => boolean }
 ```
 
 #### Description
@@ -67,7 +67,7 @@ A function can also be passed to control this behavior dynamically based on the 
 #### Type
 
 ```ts
-{ 
+type NamingOption = { 
   elem?: string,
   modName?: string,
   modVal?: string,
@@ -87,7 +87,7 @@ also allows to specify a prefix for exported BEM functions.
 #### Type
 
 ```ts
-boolean
+type ExportGlobalsOption = boolean
 ```
 
 #### Description
@@ -101,7 +101,7 @@ Allow `@fbem/css-loader` to export names from global class or id, so you can use
 #### Type
 
 ```ts
-boolean
+type ExportOnlyLocalsOption = boolean
 ```
 
 #### Description
@@ -116,7 +116,7 @@ Useful when you use for pre-rendering (for example SSR).
 #### Type
 
 ```ts
-boolean
+type SourceMapOption = boolean
 ```
 
 #### Description
@@ -130,7 +130,7 @@ By default generation of source maps depends on the [`devtool`](https://webpack.
 #### Type
 
 ```ts
-number
+type ImportLoadersOption = number
 ```
 
 #### Description
