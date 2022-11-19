@@ -2,7 +2,7 @@
 
 ## Getting started
 
-**@fbem/css-loader** is a loader for webpack, which allows you to load CSS and compile it to BEM functions.
+**@fbem/css-loader** is a loader for webpack, which allows you to load CSS and compile it to BEM functions. **@fbem/css-loader** is a fork of [`css-loader`](https://github.com/webpack-contrib/css-loader).
 
 > **Warning**
 >
