@@ -24,8 +24,9 @@ import { compose } from '@fbem/utils';
 
 import { cnButton as modDisabled } from './_disabled/button_disabled.css';
 import { cnButton as modStyle } from './_style/button_style.css';
+import { cnButton as base } from './button.css';
 
-const cnButton = compose(modDisabled, modStyle);
+const cnButton = compose(base, modDisabled, modStyle);
 
-cnButton({ style: 'flat', disabled: true }, ['mix-class-name']);
+cnButton({ style: 'flat', disabled: true }, ['mix']); // 'button button_style_flat button_disabled mix'
 ```
