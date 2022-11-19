@@ -22,7 +22,7 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "tsc --module esnext --outDir dist && tsc --outDir dist/cjs ",
+    "build": "tsc",
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",
     "prepublishOnly": "npm run build"

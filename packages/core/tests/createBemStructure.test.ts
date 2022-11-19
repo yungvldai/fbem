@@ -122,4 +122,32 @@ describe('createBemStructure', () => {
       },
     });
   });
+
+  it('should work correctly #4', () => {
+    const bemStructure = createBemStructure(
+      {
+        'block_mod_mod-val': 'className-0',
+      },
+      {
+        elem: '__',
+        modName: '_',
+        modVal: '_',
+        prefix: 'cn',
+      }
+    );
+
+    expect(bemStructure).toEqual({
+      cnBlock: {
+        base: '',
+        mods: {
+          mod: {
+            type: 'string',
+            values: {
+              'mod-val': 'className-0',
+            },
+          },
+        },
+      },
+    });
+  });
 });
