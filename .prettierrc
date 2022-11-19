@@ -1,8 +1,6 @@
 {
   "importOrder": [
-    "^src/(.*)$",
-    "^\\.\\.?\\/((?!css).)*$",
-    "^(.*)\\.css$"
+    "^src/(.*)$"
   ],
   "importOrderSeparation": true,
   "printWidth": 100,
