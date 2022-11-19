@@ -28,4 +28,4 @@ jobs:
 
       - name: "Tests"
         run: |
-          npm test
+          npm test:ci:coverage

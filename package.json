@@ -2,7 +2,7 @@
   "name": "fbem",
   "description": "Functional BEM packages",
   "scripts": {
-    "test:coverage": "lerna run test -- --collectCoverage",
+    "test:ci:coverage": "lerna run test -- --ci --collectCoverage",
     "test": "lerna run test",
     "prepare": "husky install",
     "pre-commit": "lint-staged",
