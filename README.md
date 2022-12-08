@@ -1,5 +1,8 @@
 # Functional BEM
 
+FBEM is a functional implementation of the [BEM methodology](https://en.bem.info/methodology/quick-start/). 
+FBEM packages help you clean up your styles and make them clearer and more organized.
+
 ## Demo
 <img src="https://github.com/yungvldai/fbem/blob/master/media/demo.gif" alt="demo" width="100%">
 
@@ -14,7 +17,7 @@
 |       [@fbem/utils](https://github.com/yungvldai/fbem/tree/master/packages/utils)       |             [ ![npm](https://img.shields.io/npm/v/@fbem/utils) ]( https://www.npmjs.com/package/@fbem/utils )             |
 
 
-## Example
+## Code example
 
 ```css
 /* style.css */
