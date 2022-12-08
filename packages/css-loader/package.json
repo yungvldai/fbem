@@ -1,6 +1,6 @@
 {
   "name": "@fbem/css-loader",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "description": "Functional BEM CSS loader for Webpack",
   "keywords": [
     "bem",
