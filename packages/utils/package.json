@@ -31,5 +31,6 @@
     "type": "git",
     "url": "git+https://github.com/yungvldai/fbem.git"
   },
-  "homepage": "https://github.com/yungvldai/fbem/tree/master/packages/utils"
+  "homepage": "https://github.com/yungvldai/fbem/tree/master/packages/utils",
+  "gitHead": "14c84c047c0d5e50cd33ad5d907bd64f7912deb9"
 }

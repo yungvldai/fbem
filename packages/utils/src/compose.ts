@@ -1,7 +1,7 @@
 import { ComposeFunction } from './types';
 
 const compose: ComposeFunction = (...fns: any[]) => {
-  return (modifies: any = {}, mixes: string[] = []) => {
+  return (modifies: any = {}, mixes: (string | undefined)[] = []) => {
     return Array.from(
       new Set([...fns.reduce((acc, fn) => fn(modifies).split(' ').concat(acc), []), ...mixes])
     ).join(' ');
