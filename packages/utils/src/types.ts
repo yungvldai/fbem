@@ -1,7 +1,7 @@
-export type BemFunction<T> = (modifiers?: T, mixes?: string[]) => string;
+export type BemFunction<T> = (modifiers?: T, mixes?: (string | undefined)[]) => string;
 
 type Merge<T, U> = {
-  [K in keyof T | keyof U]: K extends keyof T & keyof U
+  [K in keyof T | keyof U]?: K extends keyof T & keyof U
     ? (U | T)[K]
     : K extends keyof U
     ? U[K]
