@@ -77,7 +77,15 @@ type NamingOption = {
 
 #### Description
 
-Default: `{ elem: '__', modName: '_', modVal: '_', prefix: 'cn' }`
+Default: 
+```js
+{ 
+  elem: '__', 
+  modName: '_', 
+  modVal: '_', 
+  prefix: 'cn' 
+}
+```
 
 Allows to specify separators for parsing classnames according to the rules of the BEM methodology, 
 also allows to specify a prefix for exported BEM functions.
