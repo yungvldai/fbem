@@ -140,5 +140,50 @@ Default: `0`
 Allows to enable/disable or specify number of loaders applied before CSS loader for `@import` at-rules, CSS modules and ICSS imports, i.e. `@import`/`composes`/`@value value from './values.css'`/etc.
 
 
-.. coming soon ..
+### `auto`
 
+#### Type
+
+```ts
+type AutoOption = boolean | RegExp | ((path: string) => boolean);
+```
+
+#### Description
+
+Default: `undefined`
+
+Allows auto enable CSS modules/ICSS (imports & exports from CSS) based on filename.
+
+### `localIdent`
+
+#### Type
+
+```ts
+type LocalIdentOption = {
+  name?: string,
+  context?: string,
+  hashSalt?: string,
+  hashDigest?: string,
+  hashDigestLength?: number,
+  hashFunction?: any;
+  hashStrategy?: 'resource-path-and-local-name' | 'minimal-subset';
+  regExp?: string | RegExp;
+  get?: (context: LoaderContext<Options>, localIdentName: string, localName: string) => string;
+}
+```
+
+#### Description
+
+Default: 
+```ts
+const localIdent = {
+  name: '[hash:base64]',
+  context: loaderContext.rootContext,
+  hashSalt: loaderContext._compilation.hashSalt,
+  hashFunction: loaderContext._compilation.hashFunction,
+  hashDigest: loaderContext._compilation.hashDigest,
+  hashDigestLength: loaderContext._compilation.hashDigestLength
+}
+`
+
+Allows to configure the generated local ident name.
