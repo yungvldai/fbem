@@ -9,6 +9,8 @@ FBEM packages help you clean up your styles and make them clearer and more organ
 
 ## Packages
 
+**There is a rule that packages with the same major version must be compatible**
+
 |       Package name      |                                                      Package version                                                      |
 |:-----------------------:|:-------------------------------------------------------------------------------------------------------------------------:|
 |        [@fbem/core](https://github.com/yungvldai/fbem/tree/master/packages/core)       |              [ ![npm](https://img.shields.io/npm/v/@fbem/core) ]( https://www.npmjs.com/package/@fbem/core )              |
