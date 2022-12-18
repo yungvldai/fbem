@@ -184,6 +184,6 @@ const localIdent = {
   hashDigest: loaderContext._compilation.hashDigest,
   hashDigestLength: loaderContext._compilation.hashDigestLength
 }
-`
+```
 
 Allows to configure the generated local ident name.
